@@ -1,0 +1,39 @@
+
+
+html, body{
+    height:100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-image: 
+                     url("images/pattern-circles.svg"),
+                     url("images/bg-pattern.svg");
+    background-repeat:no-repeat;
+    background-position: top center;
+}
+
+header{
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    visibility: hidden;
+}

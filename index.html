@@ -2,38 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700..800">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
 
-  Pageviews
-  $ /month
+  <section>
+    <div class="price">
+      <p class="pageview"><span id="pageview"></span>pageviews</p>
+      <p class="price">$ <span id="number"></span>/month</p>
+    </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+    <div class="slidercontainer">
+      <input type="range" id="pageviewRange" min="10k" max="1M" class="slider">
+    </div>
+    <label class="switch">
+      <p class="bill">Monthly Billing</p>
+      <input type="checkbox">
+      <span class="sliderRange"></span>
+      <p class="bill">Yearly Billing <span id="discount">25% discount</span></p>
+    </label>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+    <hr>
+    <aside>
+      <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
 
-  Start my trial
-  
-  <div class="attribution">
+      <button id="start">Start my trial</button>
+    </aside>
+
+  </section>
+
+
+
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">MX</a>.
+  </footer>
+  
 </body>
 </html>
