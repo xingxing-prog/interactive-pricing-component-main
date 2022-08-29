@@ -6,6 +6,7 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Monrope';
 }
 
 body{
@@ -14,10 +15,43 @@ body{
                      url("images/bg-pattern.svg");
     background-repeat:no-repeat;
     background-position: top center;
+    font-size:15px;
+  
 }
+
+section{
+    color:hsl(225, 20%, 60%);
+    background-color:#fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width:600px;
+    margin-top:60px;
+    padding:50px;
+    box-sizing: border-box;
+    border-radius:12px;
+    margin-left: 50px;
+    
+} 
+
+#priceContainer{
+    display:flex;
+    gap:300px;
+    
+}
+
+#pageview{
+    letter-spacing:2px;
+    text-transform: uppercase;
+}
+
 
 header{
     text-align:center;
+
+    
+}
+
+ul{
+    list-style-type: none;
 }
 
 

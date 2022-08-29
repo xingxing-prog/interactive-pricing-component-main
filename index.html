@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700..800">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
@@ -17,9 +17,9 @@
   </header>
 
   <section>
-    <div class="price">
-      <p class="pageview"><span id="pageview"></span>pageviews</p>
-      <p class="price">$ <span id="number"></span>/month</p>
+    <div id="priceContainer">
+      <p id="pageview"><span id="number"></span>pageviews</p>
+      <p >$ <span id="price"></span>/month</p>
     </div>
 
     <div class="slidercontainer">
@@ -35,9 +35,9 @@
     <hr>
     <aside>
       <ul>
-        <li>Unlimited websites</li>
-        <li>100% data ownership</li>
-        <li>Email reports</li>
+        <li><img src="images/icon-check.svg" alt="">    Unlimited websites</li>
+        <li><img src="images/icon-check.svg" alt="">    100% data ownership</li>
+        <li><img src="images/icon-check.svg" alt="">    Email reports</li>
       </ul>
 
       <button id="start">Start my trial</button>
