@@ -10,18 +10,19 @@
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 <body>
-
+  
   <header>
     <h1>Simple, traffic-based pricing</h1>
     <p>Sign-up for our 30-day trial. No credit card required.</p>
   </header>
 
-<article>
-  <section>
-    <div></div>
+  <main>
     <div id="priceContainer">
-      <p id="pageview"><span id="number">100K </span>pageviews</p>
-      <p><span id="price">$16.00</span>/month</p>
+      
+        <p id="pageview"><span id="number">100K </span>pageviews</p>
+
+        <p><span id="price">$16.00</span><sup>/ month</sup></p>
+
     </div>
 
     <div class="slidercontainer">
@@ -33,14 +34,14 @@
         <input type="checkbox">
         <span class="sliderRange"></span>
       </label>
-      <p class="bill">Yearly Billing <span id="discount">25% discount</span></p>
+      <p class="bill">Yearly Billing <sup id="discount">25% discount</sup></p>
     </div>
-  </section>
+ 
    
 
     <hr>
   
-  <section>
+  
     <aside>
     
       <ul>
@@ -51,13 +52,8 @@
 
       <button id="start">Start my trial</button>
     </aside>
-  </section>
 
-</article>
-
-
-
-
+  </main>
   <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">MX</a>.
