@@ -32,9 +32,7 @@ main{
     padding:30px 50px 20px;
     box-sizing: border-box;
     border-radius:12px;
-    
-   
-      
+         
 } 
 
 h4{
@@ -70,7 +68,10 @@ hr{
 #price{
     color:hsl(227, 35%, 25%);
     font-size:40px;
+    font-weight:900;
 }
+
+
 
 #pageview{
     letter-spacing:2px;
@@ -128,6 +129,12 @@ p{
     border-radius:5px;
 }
 
+.sliderRange::-moz-range-progress{
+    height:8px;
+    border-radius:8px;
+    background-color: hsl(93, 100%, 50%);
+}
+
 .sliderRange{
     margin:30px 0;
     width:100%;
@@ -142,7 +149,7 @@ p{
     width:40px;
     height:40px;
     border-radius:50%;
-    background-color:hsl(50, 100%, 50%);
+    /*background-color:hsl(50, 100%, 50%);*/
     cursor:pointer;
 }
 
@@ -159,26 +166,19 @@ p{
       
 }
 
+.sliderRange::-moz-range-thumb:hover{
+    background-color:hsl(93, 100%, 50%);;
+}
+
 .sliderRange::-ms-thumb{
     background-color:transparent;
     height:40px;
     width:40px;
     background:hsl(174, 77%, 80%);
-    background-image:url('images/icon-slider.svg');
+    /*background-image:url('images/icon-slider.svg');*/
 
 }
 
-.sliderRange::ms-fill-lower{
-    background:hsl(174, 77%, 80%);
-}
-
-.sliderRange::ms-fill-upper{
-    background:hsl(224, 65%, 95%);
-}
-
-#pageviewRange{
-    accent-color:hsl(174, 77%, 80%)
-}
 
 
 button{
@@ -229,11 +229,11 @@ input[type=checkbox]{
   }
   
   input:checked + label {
-    background: lightgreen;
+    background:hsl(93, 100%, 50%) ;
   }
   
   label:hover{
-    background:lightgreen;
+    background:hsl(93, 100%, 50%);
   }
   input:checked + label:after {
     left: calc(100% - 4px);
