@@ -11,22 +11,22 @@
 </head>
 <body>
   
-  <header class="master">
+  <div class="master">
     <h1>Simple, traffic-based pricing</h1>
     <h4>Sign-up for our 30-day trial. No credit card required.</h4>
-  </header>
+  </div>
 
   <main>
     <div id="priceContainer">
       
-      <p id="pageview"><span id="number">100K </span>&nbsppageviews</p>
+      <p id="pageview"><span id="number">100 </span>K&nbsppageviews</p>
 
       <p class="center"><strong id="price">$16.00 </strong>&nbsp/ month</p>
       
     </div>
 
     <div class="slidercontainer">
-      <input type="range" id="pageviewRange" min="10" max="100" class="sliderRange">
+      <input type="range" id="pageviewRange" min="10" max="1000" value="100" class="sliderRange">
     </div>
   
 
@@ -54,6 +54,8 @@
   </aside>
 
   </main>
+
+  <script src="main.js"></script>
   <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">MX</a>.

@@ -29,13 +29,17 @@ main{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     margin-top: 50px;
-    padding:30px 50px;
+    padding:30px 50px 20px;
     box-sizing: border-box;
     border-radius:12px;
     
    
       
 } 
+
+h4{
+    color:hsl(225, 20%, 60%);
+}
 
 .master{
     text-align:center;
@@ -116,13 +120,20 @@ p{
 
 }*/
 
+.discount{
+    color:hsl(15, 100%, 70%);
+    background-color:hsl(14, 92%, 95%);
+    border: 1px solid hsl(14, 92%, 95%);
+    padding:2px;
+    border-radius:5px;
+}
 
 .sliderRange{
     margin:30px 0;
     width:100%;
     height:8px;
     border-radius:5px;
-    background-color:rgb(200, 200, 200);
+    background-color:hsl(224, 65%, 95%);
     position:relative;
 }
 
@@ -145,24 +156,43 @@ p{
     background-position:center center;
     background-color:hsl(174, 86%, 45%);
     border:0;
-    
+      
 }
 
 .sliderRange::-ms-thumb{
     background-color:transparent;
     height:40px;
     width:40px;
+    background:hsl(174, 77%, 80%);
     background-image:url('images/icon-slider.svg');
+
+}
+
+.sliderRange::ms-fill-lower{
+    background:hsl(174, 77%, 80%);
+}
+
+.sliderRange::ms-fill-upper{
+    background:hsl(224, 65%, 95%);
+}
+
+#pageviewRange{
+    accent-color:hsl(174, 77%, 80%)
 }
 
 
 button{
     width: 180px;
-    height: 50px;
+    height: 45px;
     color:hsl(0, 0%, 100%);
     border-radius: 20px;
     background-color: hsl(227, 35%, 25%);
+    font-weight:600;
+    cursor:pointer;
+    border:1px solid hsl(227, 35%, 25%);
 }
+
+
 
 
 footer{
@@ -180,7 +210,7 @@ input[type=checkbox]{
     text-indent: -9999px;
     width: 48px;
     height: 24px;
-    background: hsl(226, 100%, 87%);
+    background:  hsl(223, 50%, 87%);
     display: block;
     border-radius: 24px;
     position: relative;
