@@ -19,35 +19,35 @@
   <main>
     <div id="priceContainer">
       
-        <p id="pageview"><span id="number">100K </span>pageviews</p>
+      <p id="pageview"><span id="number">100K </span>pageviews</p>
 
-        <p><span id="price">$16.00</span><sup>/ month</sup></p>
-
+      <p class="center"><strong id="price">$16.00 </strong>&nbsp/ month</p>
+      
     </div>
 
     <div class="slidercontainer">
-      <input type="range" id="pageviewRange" min="10k" max="1M" class="slider">
+      <input type="range" id="pageviewRange" min="10k" max="1M" class="sliderRange">
     </div>
-    <div class="toggle">
-      <p class="bill">Monthly Billing</p>
-      <label class="switch">
-        <input type="checkbox">
-        <span class="sliderRange"></span>
-      </label>
-      <p class="bill">Yearly Billing <sup id="discount">25% discount</sup></p>
-    </div>
- 
-   
-
-    <hr>
   
+
+  <div class="toggle">
+    <p class="bill">Monthly Billing</p>
+    <input type="checkbox" id="switch"/>
+    <label for="switch">Toggle</label>
+    <p class="bill">Yearly Billing</p>
+    <p class="discount">25% discount</p>
+  </div> 
+  
+    
+ 
+    <hr>
   
     <aside>
     
       <ul>
-        <li><img src="images/icon-check.svg" alt="">    Unlimited websites</li>
-        <li><img src="images/icon-check.svg" alt="">    100% data ownership</li>
-        <li><img src="images/icon-check.svg" alt="">    Email reports</li>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
       </ul>
 
       <button id="start">Start my trial</button>
